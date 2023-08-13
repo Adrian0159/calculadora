@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <span>calc</span>
+        <span class="tema">THEME</span>
+      </div>
+      <div class="posision">
+        <input type="checkbox" id="btn" />
+
+        <label class="botao" for="btn">
+          <div class="bola"></div>
+        </label>
+      </div>
+
+      <div id="resultado" class="quadro"></div>
+
+      <div class="container">
+        <button class="b7" onclick="insert('7')">7</button>
+        <button class="b8" onclick="insert('8')">8</button>
+        <button class="b9" onclick="insert('9')">9</button>
+        <button id="bdel" onclick="back()">DEL</button>
+        <button class="b4" onclick="insert('4')">4</button>
+        <button class="b5" onclick="insert('5')">5</button>
+        <button class="b6" onclick="insert('6')">6</button>
+        <button class="bmais" onclick="insert('+')">+</button>
+        <button class="b1" onclick="insert('1')">1</button>
+        <button class="b2" onclick="insert('2')">2</button>
+        <button class="b3" onclick="insert('3')">3</button>
+        <button class="bmenos" onclick="insert('-')">-</button>
+        <button class="bponto" onclick="insert('.')">.</button>
+        <button class="b0" onclick="insert('0')">0</button>
+        <button class="bbarra" onclick="insert('/')">/</button>
+        <button class="bx" onclick="insert('*')">x</button>
+        <button id="breset" onclick="resetar()">RESET</button>
+        <button id="bigual" onclick="calcular()">=</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
